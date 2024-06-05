@@ -81,3 +81,58 @@ body {
   transition: all 0.5s ease;
   z-index: 2;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .header-img {
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .image-1,
+  .image-2 {
+    width: 150px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    min-width: 100px;
+  }
+
+  .btn-yes {
+    transform: translateX(-120%);
+  }
+
+  .btn-no {
+    left: calc(50% + 0.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .image-1,
+  .image-2 {
+    width: 100px;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    min-width: 80px;
+  }
+
+  .btn-yes {
+    transform: translateX(-100%);
+  }
+
+  .btn-no {
+    left: calc(50% + 0.25rem);
+  }
+}
